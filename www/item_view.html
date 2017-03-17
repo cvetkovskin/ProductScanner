@@ -1,0 +1,76 @@
+<ons-page id="view_item">
+      <ons-page modifier="shop-details">
+        <ons-toolbar modifier="transparent">
+          <div class="left">
+            <ons-back-button modifier="back" id="back-button">Back</ons-back-button></div>
+          </div>
+        </ons-toolbar>
+
+        <div class="card">
+          <ul id="list_photos" class="list-container">
+               
+          </ul>
+          <ons-icon icon="fa-chevron-right" class="right_arrow" ></ons-icon>
+          <ons-icon icon="fa-chevron-left" class="left_arrow" ></ons-icon>
+        </div>
+
+        
+        <div class="titlebar">
+            
+        </div>
+        <div class="stockbar">
+        </div>
+
+
+        </ons-list-item></ons-list>
+
+        <ons-list style="border-top: 0;" >
+         <ons-list-item>
+           <ons-icon class="list-icon" icon="fa-clock-o" size="2x" style="padding-right: 10px"></ons-icon>
+            <div class="prop-desc" id="updated_at"> 
+            </div>
+          </ons-list-item>
+          
+          <ons-list-item modifier="chevron" tappable id="tel">
+            <ons-icon class="list-icon" icon="fa-mobile" size="2x" style="padding-right: 16px; padding-left: 6px;"></ons-icon>
+            <div class="prop-desc" id="telephone">
+            </div>
+          </ons-list-item>
+          
+          <ons-list-item>
+            <ons-icon class="list-icon" icon="fa-map-marker" size="2x" style="padding-right: 15px; padding-left: 5px;"></ons-icon> 
+            <div class="prop-desc" id="address">
+            </div>
+          </ons-list-item>
+
+           <ons-list-item>
+            <div id="description">
+              
+            </div>
+          </ons-list-item>
+           
+          <ons-list-item>
+            <div id="map_canvas"></div>
+          </ons-list-item>  
+          
+          <ons-list-item modifier="chevron" tappable id="loc">
+             
+            <div class="prop-desc">
+              View in Google Maps
+            </div>
+          </ons-list-item>
+    
+        
+        </ons-list>
+
+        <script id="product_view" type="text/templete">
+        <li  class="list-item-container" id="{{ID}}">
+                <img src="{{path}}" alt="Image of {{name}}"  /> 
+        </li>
+    </script>
+    
+    <script id="text_template" type="text/templete">
+         {{text}}
+    </script>
+
+</ons-page>

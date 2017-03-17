@@ -1,0 +1,38 @@
+<ons-page id="list_page">
+        
+    <ons-toolbar>
+        <div class="left"><ons-back-button>Back</ons-back-button></div>
+        <div class="center">Products</div>
+    </ons-toolbar>
+
+     <ons-list id="product_list">
+        
+    </ons-list>
+    
+    <ons-fab position="right bottom" modifier="blue" id="scaner" ng-click="scan()">
+      <ons-ripple></ons-ripple>
+      <ons-icon icon="fa-barcode"></ons-icon>
+    </ons-fab>
+    
+    <script id="product_item" type="text/templete">
+        <ons-list-item id="{{ID}}" modifier="chevron" class="list-item-container1" tappable>
+         <ons-row id="{{ID}}">
+            <ons-col id="{{ID}}" width="65px">
+              <img src="{{Src}}" class="thumbnail_logo">
+            </ons-col>
+            <ons-col id="{{ID}}">
+              <div class="name">
+                {{Name}}
+              </div>
+              <div class="stock">
+                Number in stock: {{Num}}
+              </div>
+              </ons-col>
+            <ons-col id="{{ID}}" width="40px"></ons-col>
+          </ons-row>
+        </ons-list-item>
+    </script>
+</ons-page>
+
+
+            

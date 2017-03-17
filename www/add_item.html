@@ -1,0 +1,60 @@
+<ons-page id="add_new">
+        
+    <ons-toolbar>
+        <div class="left"><ons-back-button>Back</ons-back-button></div>
+        <div class="center">Add Item</div>
+    </ons-toolbar>
+    
+    <ons-list  modifier="inset" style="margin-top: 10px">
+        <ons-list-item class="to-wrapper">
+            <ons-row>
+                <ons-col width="54px">
+                  <img src="img/add_thumbnail.png"  class="thumb to-image" id="thumb" onclick="add_thumb()">
+                </ons-col>
+                <ons-col id="thumb_label">
+               Thumbnail 
+            </ons-col>
+            </ons-row>
+        </ons-list-item>
+        <ons-list-item class="to-wrapper">
+            <ons-row id="images">
+                <ons-col width="104px">
+                  <img src="img/add_image.png" alt="Nesto mse" width="100" class="to-image" id="add_image" onclick="add_img()">
+                </ons-col>
+            </ons-row>
+        </ons-list-item>
+        <ons-list-item>
+            <div id="item_code">
+                
+            </div>
+        </ons-list-item>
+        <ons-list-item>
+            <ons-input id="name"  placeholder="Name" float class="input"></ons-input>
+        </ons-list-item>
+        <ons-list-item>
+            <ons-input type="number" id="tel" placeholder="Telephone Number" float class="input"></ons-input>
+        </ons-list-item>
+        <ons-list-item>
+            <ons-input id="store_address" placeholder="Address" float class="input"></ons-input>
+        </ons-list-item>
+        <ons-list-item>
+            <ons-input type="number" id="stock"  placeholder="Stock Number" float class="input"></ons-input>  
+        </ons-list-item>
+        <ons-list-item>
+            <textarea id="desc" class="textarea textarea--transparent" placeholder="Input Description" style="width: 100%; height: 100px;"></textarea>
+        </ons-list-item>
+            
+        
+    </ons-list>
+    
+    <div style="padding: 10px 9px">
+        <ons-button id="button_add_item" modifier="large" style="margin: 0 auto;">
+          Add Item
+        </ons-button>
+      </div>
+
+    
+    <script id="text_template" type="text/templete">
+         {{text}}
+    </script>
+</ons-page>

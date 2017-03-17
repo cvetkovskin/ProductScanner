@@ -1,0 +1,75 @@
+/* This is a CSS file */
+
+.page--shop-details__content {
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  top: 0px !important;
+  bottom: 0px;
+}
+
+.card {
+  background-color: white;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 250px;
+  overflow: hidden;
+  text-align: center;
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+ 
+.titlebar {
+    background-color: white;
+    padding: 10px 0px 10px 0px;
+    text-align: center;
+    border-top-style:  solid;
+    border-color: #DCDCDC;
+    border-width: 1px;
+     font-size: 24px;
+}
+.stockbar{
+    background-color: white;
+    padding: 0px 0px 10px 0px;
+    text-align: center;
+    color: gray;
+    font-size: 15px;
+}
+
+.card img {
+   height: 250px;
+}
+
+.prop-desc {
+  font-size: 14px;
+  opacity: 0.7;
+}
+
+.list-icon {
+  opacity: 0.5;
+}
+.right_arrow{
+    position: absolute;
+    opacity: 0.5;
+    top: 20%;
+    right: 5%;
+}
+.right_arrow:hover{
+    opacity: 0.7;
+}
+.right_arrow:action{
+    opacity: 1;
+}
+.left_arrow{
+    opacity: 0.5;
+    position: absolute;
+    opacity: 0.5;
+    top: 20%;
+    left: 5%;
+}
+.left_arrow:hover{
+    opacity: 0.7;
+}
+.left_arrow:action{
+    opacity: 1;
+}

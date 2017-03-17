@@ -1,0 +1,26 @@
+{
+    "plugins": [
+        "mobi.monaca.plugins.Monaca",
+        "mobi.monaca.plugins.BarcodeScanner@1.0.3"
+    ],
+    "framework_version": "3.5",
+    "xcode_version": "7",
+    "cordova_version": "6.2",
+    "plugin_settings": {
+        "cordova-plugin-googlemaps": {
+            "variables": [
+                "API_KEY=AIzaSyAB5IdlpGPevP_JbygFI5h42XiuyOBNA_g",
+                "API_KEY_FOR_ANDROID=AIzaSyAB5IdlpGPevP_JbygFI5h42XiuyOBNA_g",
+                "API_KEY_FOR_IOS=AIzaSyAB5IdlpGPevP_JbygFI5h42XiuyOBNA_g"
+            ]
+        }
+    },
+    "external_plugins": [
+        "cordova-plugin-whitelist@1.2.2",
+        "cordova-plugin-splashscreen@3.2.2",
+        "cordova-custom-config@2.0.3",
+        "cordova-plugin-googlemaps",
+        "cordova-plugin-statusbar@2.1.3",
+        "cordova-plugin-camera@2.2.0"
+    ]
+}
